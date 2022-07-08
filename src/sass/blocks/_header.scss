@@ -1,0 +1,30 @@
+.header {
+    padding: 19px 0;
+    &__wrapper {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(5, 228px);
+        &_item {
+            display: grid;
+            grid-template-columns: 28px 200px;
+            grid-template-rows: repeat(3, 16px);
+            column-gap: 10px;
+            row-gap: 3px;
+            justify-content: space-between;
+            &-title {
+                font-size: 14px;
+                font-weight: 700;
+            }
+            &-tel {
+                grid-column: 2;
+                font-size: 12px;
+                font-weight: 300;
+            }
+            &-mail {
+                grid-column: 2;
+                font-size: 12px;
+                font-weight: 300;
+            }            
+        }
+    }
+}
