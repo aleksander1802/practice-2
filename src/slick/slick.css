@@ -123,7 +123,64 @@
 }
 
 
+.slick-slider .slick-arrow {
+    position: absolute;
+    bottom: 60px;
+    z-index: 10;
+    font-size: 0;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border: none;
+}
 
+button.slick-prev.slick-arrow {
+        left: 45%;
+        background: url('../icons/arrow_prev.png') 0 0 no-repeat;
+}
 
+button.slick-prev.slick-arrow:hover, button.slick-next.slick-arrow:hover {
+    transform: scale(1.5);
+    
+}
+
+button.slick-next.slick-arrow {    
+        right: 45%;
+        background: url('../icons/arrow_next.png') 0 0 no-repeat;
+}
+
+.promo__slick_slider .slick-dots {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.promo__slick_slider .slick-dots li {
+    list-style-type: none;
+    margin: 0 2px;
+    
+}
+.promo__slick_slider .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.promo__slick_slider .slick-dots .slick-active button {
+    background-color: white;
+}
+
+.promo__slick_slider .slick-dots button:hover {
+    background-color: rgb(255, 255, 255);
+}
 
 
