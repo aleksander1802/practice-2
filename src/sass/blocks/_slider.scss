@@ -1,0 +1,34 @@
+.promo__slick_slider {
+    position: relative;
+    
+    &-item {
+        display: grid;
+        grid-template-columns: 530px auto;
+        grid-template-rows: 230px repeat(2, auto);
+        justify-content: space-between;
+    }
+    
+    &-title {
+        align-self: end;
+        font-size: 42px;
+        font-weight: 900;
+        color: #ffffff;
+    }
+    &-descr {
+        grid-column: 1;
+        margin-top: 27px;
+        width: 435px;
+        font-size: 24px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+    
+    &-img {
+        grid-column: 2;
+        grid-row: 1 / 4;
+        margin-top: 30px;
+    }
+}
+
+
+ 

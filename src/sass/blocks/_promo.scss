@@ -1,0 +1,44 @@
+.promo {
+    min-height: 100vh;
+    background: url('../img/promo_bg.png') no-repeat 50% / cover;
+    padding-top: 39px;
+    position: relative;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_items {
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            &-item {
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #ffffff;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &__btn {
+        position: absolute;
+        bottom: 160px;
+        width: 241px;
+        height: 60px;
+        background-color: #00c2f0;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+        cursor: pointer;
+        &:hover {
+            background-color: #ffffff;
+            color :#00c2f0; 
+            }
+    }
+}
