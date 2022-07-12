@@ -107,6 +107,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
+  z-index: 20;
 }
 .promo__btn:hover {
   background-color: #ffffff;
@@ -123,6 +124,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
 }
 .promo__slick_slider-title {
   -ms-flex-item-align: end;
