@@ -22,3 +22,7 @@ $(document).ready(function(){
   // }
 
   // console.log(solution(10));
+
+
+
+  
