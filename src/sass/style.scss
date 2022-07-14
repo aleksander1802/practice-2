@@ -30,8 +30,21 @@ body {
     margin-top: 20px
 }
 
+.active {
+    color: #00c2f0;
+}
+
+.arrow {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
 
 
+
+@import 'blocks/title';
 @import 'blocks/header';
 @import 'blocks/promo';
 @import 'blocks/slider';

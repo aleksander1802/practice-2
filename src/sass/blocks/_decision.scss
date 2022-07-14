@@ -1,0 +1,66 @@
+.decision {
+    padding: 79px 0 61px;
+    background: url('../img/decision_bg.png') no-repeat 50% / cover;
+    &__title {
+        color: #ffffff;
+    }
+    &__slider {
+        position: relative;
+        padding-top: 25px;
+        &_control {
+            &-list {
+                list-style-type: none;
+                margin: 0 auto;
+                font-size: 14px;
+                font-weight: 400;
+                color: #ffffff;
+                width: 840px;
+                height: 65px;
+                border: 1px solid #ffffff;
+                border-radius: 5px;
+                display: flex;
+                justify-content: space-around;
+                &-slide {
+                    position: relative;
+                    margin: auto;
+                    cursor: pointer;
+                    &::after{
+                        position: absolute;
+                        content: '';                        
+                        height: 55px;
+                        border-right: 1px solid rgb(255, 255, 255);
+                        opacity: .5;
+                        padding-right: 28px;
+                        top: 50%;
+                        transform: translateY(-50%); 
+                    }
+                    &:last-child::after {
+                        border-right: none;
+                    } 
+                    &:hover {
+                        color: #00c2f0;
+                    }
+                }
+            }
+            
+        }
+        &-prev {
+            left: 0;
+        }
+        &-next {
+            right: 0;
+        }
+        &_list {
+            position: relative;
+            text-align: center;
+            padding-top: 36px;
+            &-item {
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
