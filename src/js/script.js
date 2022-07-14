@@ -20,17 +20,18 @@ $(document).ready(function(){
         slidesWrapper = document.querySelector('.decision__slider_list'),
         slidesField = document.querySelector('.decision__slider_inner'),
         width = window.getComputedStyle(slidesWrapper).width,
-        dots = document.querySelectorAll('.decision__slider_control-list-slide'),
-        sliderList = document.querySelectorAll('.decision__slider_list-item');
+        dots = document.querySelectorAll('.decision__slider_control-list-slide');
+        
 
 
         let slideIndex = 1;
         let offset = 0;
-        let selectedLI;  
+        let selectedLI; 
+        
 
 
-        function highlight(td, arrow) {
-          
+        function highlight(td) {
+          dots.forEach(item => item.classList.remove('active'))
           if (selectedLI) { 
             selectedLI.classList.remove('active');
           }
@@ -43,11 +44,18 @@ $(document).ready(function(){
           
           if (offset == +width.slice(0, width.length - 2) * (slides.length - 1)) {
             offset = 0;
+            
           } else {
-            offset += +width.slice(0, width.length - 2)
+            offset += +width.slice(0, width.length - 2);
+             
           }
           slidesField.style.transform = `translateX(-${offset}px)`;
-          console.log(sliderList);
+          dots.forEach(item => item.classList.remove('active'))
+          if ((dots[(offset / 1140)]).classList.contains('active')) { 
+            dots[(offset / 1140)].classList.remove('active');
+          }
+          dots[(offset / 1140)].classList.add('active');
+          
         });
 
 
@@ -59,7 +67,12 @@ $(document).ready(function(){
             offset -= +width.slice(0, width.length - 2)
           }
           slidesField.style.transform = `translateX(-${offset}px)`
-          
+
+          dots.forEach(item => item.classList.remove('active'))
+          if ((dots[(offset / 1140)]).classList.contains('active')) { 
+            dots[(offset / 1140)].classList.remove('active');
+          }
+          dots[(offset / 1140)].classList.add('active');
         })
 
         
@@ -94,7 +107,6 @@ $(document).ready(function(){
             if (target.tagName != 'LI') return; // не на TD? тогда не интересует
 
             highlight(target);
-            console.log(target.getAttribute('data-slide-to'));
           })
 
           
