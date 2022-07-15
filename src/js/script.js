@@ -9,10 +9,6 @@ $(document).ready(function(){
 
 
 
-
-
-
-
   const slides = document.querySelectorAll('.decision__slider_list-item'),
         slider = document.querySelector('.decision__slider'),
         prev = document.querySelector('.decision__slider-prev'),
@@ -21,14 +17,10 @@ $(document).ready(function(){
         slidesField = document.querySelector('.decision__slider_inner'),
         width = window.getComputedStyle(slidesWrapper).width,
         dots = document.querySelectorAll('.decision__slider_control-list-slide');
-        
-
 
         let slideIndex = 1;
         let offset = 0;
         let selectedLI; 
-        
-
 
         function highlight(td) {
           dots.forEach(item => item.classList.remove('active'))
@@ -38,7 +30,6 @@ $(document).ready(function(){
           selectedLI = td;
           selectedLI.classList.add('active'); 
         }
-        
 
         next.addEventListener('click', () => {
           
@@ -50,28 +41,31 @@ $(document).ready(function(){
              
           }
           slidesField.style.transform = `translateX(-${offset}px)`;
+
           dots.forEach(item => item.classList.remove('active'))
+
           if ((dots[(offset / 1140)]).classList.contains('active')) { 
             dots[(offset / 1140)].classList.remove('active');
           }
           dots[(offset / 1140)].classList.add('active');
-          
         });
 
-
-
         prev.addEventListener('click', () => {
+
           if (offset == 0) {
             offset = +width.slice(0, width.length - 2) * (slides.length - 1)
           } else {
             offset -= +width.slice(0, width.length - 2)
           }
+
           slidesField.style.transform = `translateX(-${offset}px)`
 
           dots.forEach(item => item.classList.remove('active'))
+
           if ((dots[(offset / 1140)]).classList.contains('active')) { 
             dots[(offset / 1140)].classList.remove('active');
           }
+
           dots[(offset / 1140)].classList.add('active');
         })
 
@@ -108,9 +102,7 @@ $(document).ready(function(){
 
             highlight(target);
           })
-
-          
-        })
+        });
 
         
       
