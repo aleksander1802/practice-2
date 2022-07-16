@@ -98,7 +98,7 @@ $(document).ready(function(){
 
             slidesField.style.transform = `translateX(-${offset}px)`;
             
-            if (target.tagName != 'LI') return; // не на TD? тогда не интересует
+            if (target.tagName != 'LI') return; 
 
             highlight(target);
           })
@@ -106,8 +106,11 @@ $(document).ready(function(){
 
         
       
-        
-        
+     
+
+
+       
+
         
 
  
