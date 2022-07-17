@@ -5,12 +5,12 @@
     }
     &__wrapper {
         padding-top: 44px;
-        display: grid;
-        grid-template-rows: repeat(3, 355px);
-        grid-template-columns: repeat(2, auto);
-        grid-auto-rows: 355px;
+        display: flex;
+        flex-wrap: wrap;
             &_item {
                 position: relative;
+                height: 350px;
+                width: 567px;
                 display: grid;
                 grid-template-rows: 100px auto 100px;
                 text-align: center;
