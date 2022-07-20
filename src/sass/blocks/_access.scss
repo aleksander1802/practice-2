@@ -1,0 +1,35 @@
+.access {
+    padding: 80px 0;
+    &__wrapper {
+        position: relative;
+        margin: 0 auto;
+        background: url('../icons/access.png') no-repeat 50% / cover;
+        width: 300px;
+        height: 300px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        
+    }
+    &__title {
+        padding-top: 74px;
+    }
+    &__button {
+        text-align: center;
+        padding-top: 30px;
+        &-btn {
+            width: 241px;
+            height: 60px;
+            background-color: #00c2f0;
+            box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.07);
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ffffff;
+            cursor: pointer;
+        }
+    }
+}
