@@ -34,11 +34,22 @@ body {
   z-index: 10;
 }
 
+.footer-descr {
+  font-size: 14px;
+  font-weight: 300;
+}
+
 .title {
   margin: 0 auto;
   font-size: 30px;
   font-weight: 900;
   text-align: center;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
 .header {
@@ -449,4 +460,75 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
+}
+
+.footer {
+  padding: 50px 0 40px;
+  background-color: #0082a1;
+  color: #fff;
+  position: relative;
+}
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__wrapper_about {
+  display: grid;
+  grid-template-rows: 33px 80px auto;
+  grid-template-columns: 380px;
+}
+.footer__wrapper_about-logo {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.footer__wrapper_about-descr {
+  line-height: 19px;
+}
+.footer__wrapper_about-link {
+  padding-top: 5px;
+}
+.footer__wrapper_about-link a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer__wrapper_modules-descr {
+  line-height: 23px;
+}
+.footer__wrapper_modules a {
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 20px;
+}
+.footer__wrapper_branch-descr {
+  line-height: 23px;
+}
+.footer__wrapper_branch a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer__wrapper_aboutus-descr {
+  line-height: 23px;
+}
+.footer__wrapper_aboutus a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer__divider {
+  padding-top: 44px;
+  position: absolute;
+  width: 1171px;
+  opacity: 0.3;
+  border-bottom: 1px solid white;
+}
+.footer__rights {
+  text-align: center;
+  padding-top: 81px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #ffffff;
 }/*# sourceMappingURL=style.min.css.map */

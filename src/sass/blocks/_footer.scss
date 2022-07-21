@@ -1,0 +1,73 @@
+.footer{
+    padding: 50px 0 40px;
+    background-color: #0082a1;
+    color: #fff;
+    position: relative;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        
+        &_about {
+            display: grid;
+            grid-template-rows: 33px 80px auto;
+            grid-template-columns: 380px;
+
+            &-logo {
+                align-self: center;
+            }          
+            &-descr {
+                line-height: 19px;
+            } 
+            &-link {
+                padding-top: 5px;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+        &_modules {
+            &-descr {
+                line-height: 23px;
+            }
+            a {
+                margin-bottom: 30px;
+                text-decoration: none;
+                color: #fff;
+                margin-top: 20px;
+            }
+        }
+        &_branch {
+            &-descr {
+                line-height: 23px;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+        &_aboutus {
+            &-descr {
+                line-height: 23px;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+    &__divider{
+        padding-top: 44px;
+        position: absolute;
+        width: 1171px;
+        opacity: 0.3;
+        border-bottom: 1px solid white;
+    }
+    &__rights {
+        text-align: center;
+        padding-top: 81px;
+        font-size: 13px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+}

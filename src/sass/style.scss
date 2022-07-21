@@ -42,6 +42,11 @@ body {
     z-index: 10;
 }
 
+.footer-descr {
+    font-size: 14px;
+    font-weight: 300;
+}
+
 
 
 @import 'blocks/title';
@@ -53,5 +58,6 @@ body {
 @import 'blocks/advantage';
 @import 'blocks/variant';
 @import 'blocks/access';
+@import 'blocks/footer';
 
 
